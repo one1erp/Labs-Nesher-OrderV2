@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using Common;
 using DAL;
 //using Telerik.WinControls.RichTextBox.Model;
 
@@ -20,14 +21,17 @@ namespace OrderV2
         public ListDatas(IDataLayer dal)
         {
 
+            Logger.WriteLogFile("3333");
+
             Clients = dal.GetClients();
+
             Addresses = dal.GetAddressesByTable("CLIENT");
+
 
             Operators = dal.GetOperatorsIncludeALL().ToList();
 
             Labs = dal.GetLabs();
 
-            //    Labs=Labs.Where(g=>g.GroupID)
             Products = dal.GetProducts();
 
             Locations = dal.GetLocations();

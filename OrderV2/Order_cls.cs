@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Objects;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Common;
@@ -94,8 +95,6 @@ namespace OrderV2
         {
             if (!DEBUG)
             {
-
-
                 Utils.CreateConstring(_ntlsCon);
                 dal = new DataLayer();
             }
@@ -456,14 +455,17 @@ namespace OrderV2
 
 
             dal.Connect();
+
             //load all lists
             listData = new ListDatas(dal);
             SetCurrentOperator();
             //Add all panels to list          
-            panels = new List<IDetailsPanel>();
-            panels.Add(clientDetails);
-            panels.Add(orderDetails);
-            panels.Add(samplesDetails);
+            panels = new List<IDetailsPanel>
+            {
+                clientDetails,
+                orderDetails,
+                samplesDetails
+            };
 
 
             //Init panels data
@@ -731,6 +733,9 @@ namespace OrderV2
             set { this.btnExit.Enabled = value; }
         }
 
+        public string ConnectionString { get; private set; }
+
+        private Entities context;
 
         public bool UserHasGroup()
         {
@@ -787,6 +792,11 @@ namespace OrderV2
         #endregion
 
         private void clientDetails_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void samplesDetails_Load_1(object sender, EventArgs e)
         {
 
         }
