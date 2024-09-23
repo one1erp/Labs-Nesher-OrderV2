@@ -17,6 +17,7 @@ using Common;
 using One1.Controls;
 using Telerik.WinControls.UI.Localization;
 using XmlService;
+using System.Diagnostics;
 
 namespace OrderV2.OrderControls
 {
@@ -396,22 +397,29 @@ namespace OrderV2.OrderControls
         /// </summary>
         /// <param name="row">Specified row</param>
         /// <param name="sample">Specified sample</param>
+        /// 
+
         private void EditSampleProperties(GridViewRowInfo row, Sample sample)
         {
             sample.Product = GetSelectedProduct(row, "ProductName", ListData.CategoryProducts);
             sample.RealProduct = GetSelectedProduct(row, "RealProductName", ListData.RealProducts);
             sample.Batch = (string)(row.Cells["Batch"].Value ?? null);
-            sample.Description = (string)(row.Cells["Description"].Value ?? null);
-            sample.SamplingTemperature = row.Cells["SamplingTemperature"].Value as decimal?;
+
+            var description = (string)(row.Cells["Description"].Value ?? null);
+            sample.Description = ReplaceSpecialCharacters(description);
+
             var comments = row.Cells["Comments"].Value;
-            if (comments != null) sample.Comments = comments.ToString();
+            if (comments != null) sample.Comments = ReplaceSpecialCharacters(comments.ToString());
+
+            sample.SamplingTemperature = row.Cells["SamplingTemperature"].Value as decimal?;
+
             sample.Client = CurrentClient;
             sample.DateProduction = (DateTime?)row.Cells["DateProduction"].Value;
             var ef = row.Cells["ExternalReference"].Value;
             if (ef != null)
                 sample.ExternalReference = ef.ToString();
             sample.SampledByOperator = GetSelectedOperator(row);
-            //       sample.SampledOn = (DateTime?)row.Cells["SampledOn"].Value;
+
             if (row.Cells["TextualSamplingTime"] != null)
             {
                 sample.TextualSamplingTime = (string)row.Cells["TextualSamplingTime"].Value ?? null;
@@ -423,10 +431,6 @@ namespace OrderV2.OrderControls
             if (sample.TabMethod != null)
                 sample.TabMethod = (string)(row.Cells["TabMethod"].Value ?? null);
 
-            //var cn = row.Cells["ContainerNumber"].Value;
-            //if (cn != null)
-            //    sample.ContainerNumber = cn.ToString();
-            //sample.SampledByOperator = GetSelectedOperator(row);
             if (row.Cells["ContainerNumber"] != null)
             {
                 sample.ContainerNumber = (string)row.Cells["ContainerNumber"].Value ?? null;
@@ -460,6 +464,16 @@ namespace OrderV2.OrderControls
             }
 
         }
+
+        private string ReplaceSpecialCharacters(string input)
+        {
+            // Replace all special characters
+            return input?.Replace("–", "-")   // Replaces en-dash with hyphen
+                         .Replace("—", "-")   // Replaces em-dash with hyphen
+                         .Replace("⁻", "-")   // Replaces superscript minus with hyphen
+                         .Replace("⁰", "°");// Ensures all instances of degree symbol are consistent
+        }
+
 
         private void UpdateSdgSpecification(Sdg sdg)
         {

@@ -67,13 +67,15 @@ namespace OrderV2.OrderControls
             this.groupBox3.GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office;
             this.groupBox3.HeaderText = "פרטי דוגמאות:";
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 22, 3, 2);
             this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
             // 
             // 
-            this.groupBox3.RootElement.Padding = new System.Windows.Forms.Padding(2, 18, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(1218, 328);
+            this.groupBox3.RootElement.Padding = new System.Windows.Forms.Padding(3, 22, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(1624, 404);
             this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "פרטי דוגמאות:";
@@ -81,9 +83,10 @@ namespace OrderV2.OrderControls
             // btnDeleteXml
             // 
             this.btnDeleteXml.Enabled = false;
-            this.btnDeleteXml.Location = new System.Drawing.Point(153, 23);
+            this.btnDeleteXml.Location = new System.Drawing.Point(204, 28);
+            this.btnDeleteXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDeleteXml.Name = "btnDeleteXml";
-            this.btnDeleteXml.Size = new System.Drawing.Size(110, 24);
+            this.btnDeleteXml.Size = new System.Drawing.Size(147, 30);
             this.btnDeleteXml.TabIndex = 36;
             this.btnDeleteXml.Text = "מחק   XML";
             this.btnDeleteXml.EnabledChanged += new System.EventHandler(this.btnDeleteXml_EnabledChanged);
@@ -94,7 +97,8 @@ namespace OrderV2.OrderControls
             this.gridSamples.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridSamples.Location = new System.Drawing.Point(5, 51);
+            this.gridSamples.Location = new System.Drawing.Point(7, 63);
+            this.gridSamples.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             // 
             // gridSamples
             // 
@@ -102,7 +106,7 @@ namespace OrderV2.OrderControls
             this.gridSamples.MasterTemplate.AllowDeleteRow = false;
             this.gridSamples.MasterTemplate.EnableSorting = false;
             this.gridSamples.Name = "gridSamples";
-            this.gridSamples.Size = new System.Drawing.Size(1208, 277);
+            this.gridSamples.Size = new System.Drawing.Size(1611, 341);
             this.gridSamples.TabIndex = 35;
             this.gridSamples.RowFormatting += new Telerik.WinControls.UI.RowFormattingEventHandler(this.gridSamples_RowFormatting);
             this.gridSamples.CellFormatting += new Telerik.WinControls.UI.CellFormattingEventHandler(this.gridSamples_CellFormatting);
@@ -119,10 +123,11 @@ namespace OrderV2.OrderControls
             // btnPrintAll
             // 
             this.btnPrintAll.Enabled = false;
-            this.btnPrintAll.Location = new System.Drawing.Point(24, 23);
+            this.btnPrintAll.Location = new System.Drawing.Point(32, 28);
+            this.btnPrintAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrintAll.Name = "btnPrintAll";
             this.btnPrintAll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnPrintAll.Size = new System.Drawing.Size(110, 24);
+            this.btnPrintAll.Size = new System.Drawing.Size(147, 30);
             this.btnPrintAll.TabIndex = 34;
             this.btnPrintAll.Text = "הדפס הכל";
             this.btnPrintAll.Click += new System.EventHandler(this.btnPrintAll_Click);
@@ -131,10 +136,11 @@ namespace OrderV2.OrderControls
             // 
             this.btnAssociationTests.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAssociationTests.Enabled = false;
-            this.btnAssociationTests.Location = new System.Drawing.Point(739, 21);
+            this.btnAssociationTests.Location = new System.Drawing.Point(985, 26);
+            this.btnAssociationTests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAssociationTests.Name = "btnAssociationTests";
             this.btnAssociationTests.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnAssociationTests.Size = new System.Drawing.Size(110, 24);
+            this.btnAssociationTests.Size = new System.Drawing.Size(147, 30);
             this.btnAssociationTests.TabIndex = 34;
             this.btnAssociationTests.Text = "שיוך בדיקות";
             this.btnAssociationTests.Click += new System.EventHandler(this.btnAssociationTests_Click);
@@ -142,20 +148,22 @@ namespace OrderV2.OrderControls
             // btnChangeXml
             // 
             this.btnChangeXml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChangeXml.Location = new System.Drawing.Point(739, 21);
+            this.btnChangeXml.Location = new System.Drawing.Point(985, 26);
+            this.btnChangeXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChangeXml.Name = "btnChangeXml";
             this.btnChangeXml.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnChangeXml.Size = new System.Drawing.Size(110, 24);
+            this.btnChangeXml.Size = new System.Drawing.Size(147, 30);
             this.btnChangeXml.TabIndex = 34;
             this.btnChangeXml.Text = "שיוך בדיקות";
             // 
             // btnChooseFields
             // 
             this.btnChooseFields.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChooseFields.Location = new System.Drawing.Point(876, 21);
+            this.btnChooseFields.Location = new System.Drawing.Point(1168, 26);
+            this.btnChooseFields.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChooseFields.Name = "btnChooseFields";
             this.btnChooseFields.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnChooseFields.Size = new System.Drawing.Size(110, 24);
+            this.btnChooseFields.Size = new System.Drawing.Size(147, 30);
             this.btnChooseFields.TabIndex = 34;
             this.btnChooseFields.Text = "בחירת שדות";
             this.btnChooseFields.Click += new System.EventHandler(this.btnChooseFields_Click);
@@ -163,10 +171,11 @@ namespace OrderV2.OrderControls
             // spinCount
             // 
             this.spinCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.spinCount.Location = new System.Drawing.Point(1013, 25);
+            this.spinCount.Location = new System.Drawing.Point(1351, 31);
+            this.spinCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.spinCount.Name = "spinCount";
             this.spinCount.ReadOnly = true;
-            this.spinCount.Size = new System.Drawing.Size(45, 20);
+            this.spinCount.Size = new System.Drawing.Size(60, 24);
             this.spinCount.TabIndex = 21;
             this.spinCount.TabStop = false;
             // 
@@ -175,21 +184,23 @@ namespace OrderV2.OrderControls
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label16.Location = new System.Drawing.Point(1091, 27);
+            this.label16.Location = new System.Drawing.Point(1455, 33);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label16.Size = new System.Drawing.Size(84, 13);
+            this.label16.Size = new System.Drawing.Size(88, 17);
             this.label16.TabIndex = 20;
             this.label16.Text = "כמות דוגמאות:";
             // 
             // SamplesDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SamplesDetails";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Size = new System.Drawing.Size(1218, 328);
+            this.Size = new System.Drawing.Size(1624, 404);
             ((System.ComponentModel.ISupportInitialize)(this.groupBox3)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

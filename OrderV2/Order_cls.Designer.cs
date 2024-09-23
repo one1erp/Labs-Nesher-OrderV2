@@ -119,7 +119,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel5.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel5.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel5.Size = new System.Drawing.Size(1708, 45);
             this.splitPanel5.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.1397993F);
             this.splitPanel5.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -83);
@@ -130,11 +130,12 @@ namespace OrderV2
             // 
             this.btnNewOrderBriut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnNewOrderBriut.Location = new System.Drawing.Point(323, 11);
-            this.btnNewOrderBriut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewOrderBriut.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewOrderBriut.Name = "btnNewOrderBriut";
             this.btnNewOrderBriut.Size = new System.Drawing.Size(127, 30);
             this.btnNewOrderBriut.TabIndex = 42;
             this.btnNewOrderBriut.Text = "הזמנה ממשה\"ב";
+            this.btnNewOrderBriut.Visible = false;
             this.btnNewOrderBriut.Click += new System.EventHandler(this.btnNewOrderBriut_Click);
             // 
             // btnSaveWithoutPrint
@@ -142,7 +143,7 @@ namespace OrderV2
             this.btnSaveWithoutPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveWithoutPrint.Enabled = false;
             this.btnSaveWithoutPrint.Location = new System.Drawing.Point(1065, 11);
-            this.btnSaveWithoutPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveWithoutPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveWithoutPrint.Name = "btnSaveWithoutPrint";
             this.btnSaveWithoutPrint.Size = new System.Drawing.Size(177, 31);
             this.btnSaveWithoutPrint.TabIndex = 41;
@@ -153,7 +154,7 @@ namespace OrderV2
             // 
             this.btnNewOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnNewOrder.Location = new System.Drawing.Point(39, 11);
-            this.btnNewOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewOrder.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewOrder.Name = "btnNewOrder";
             this.btnNewOrder.Size = new System.Drawing.Size(263, 30);
             this.btnNewOrder.TabIndex = 39;
@@ -164,7 +165,7 @@ namespace OrderV2
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Location = new System.Drawing.Point(1520, 11);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(147, 30);
             this.btnExit.TabIndex = 4;
@@ -176,7 +177,7 @@ namespace OrderV2
             this.btnSaveAndPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveAndPrint.Enabled = false;
             this.btnSaveAndPrint.Location = new System.Drawing.Point(1300, 11);
-            this.btnSaveAndPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveAndPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveAndPrint.Name = "btnSaveAndPrint";
             this.btnSaveAndPrint.Size = new System.Drawing.Size(147, 30);
             this.btnSaveAndPrint.TabIndex = 3;
@@ -191,7 +192,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel4.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel4.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel4.Size = new System.Drawing.Size(1708, 284);
             this.splitPanel4.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.1846154F);
             this.splitPanel4.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 145);
@@ -212,7 +213,7 @@ namespace OrderV2
             this.samplesDetails.IsUpdatedState = false;
             this.samplesDetails.ListData = null;
             this.samplesDetails.Location = new System.Drawing.Point(0, 0);
-            this.samplesDetails.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.samplesDetails.Margin = new System.Windows.Forms.Padding(5);
             this.samplesDetails.Name = "samplesDetails";
             this.samplesDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.samplesDetails.ServiceProvider = null;
@@ -229,7 +230,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel3.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel3.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel3.Size = new System.Drawing.Size(1708, 184);
             this.splitPanel3.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.04916388F);
             this.splitPanel3.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 31);
@@ -248,7 +249,7 @@ namespace OrderV2
             this.orderDetails.IsUpdatedState = false;
             this.orderDetails.ListData = null;
             this.orderDetails.Location = new System.Drawing.Point(0, 0);
-            this.orderDetails.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.orderDetails.Margin = new System.Windows.Forms.Padding(5);
             this.orderDetails.Name = "orderDetails";
             this.orderDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.orderDetails.ServiceProvider = null;
@@ -264,7 +265,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel2.Size = new System.Drawing.Size(1708, 184);
             this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.04916388F);
             this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 6);
@@ -281,7 +282,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.radSplitContainer2.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.radSplitContainer2.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.radSplitContainer2.Size = new System.Drawing.Size(1708, 184);
             this.radSplitContainer2.TabIndex = 0;
             this.radSplitContainer2.TabStop = false;
@@ -295,7 +296,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel6.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel6.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel6.Size = new System.Drawing.Size(732, 184);
             this.splitPanel6.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.07042253F, 0F);
             this.splitPanel6.SizeInfo.SplitterCorrection = new System.Drawing.Size(-72, 0);
@@ -310,7 +311,7 @@ namespace OrderV2
             this.grpStatus.GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office;
             this.grpStatus.HeaderText = "סטטוס";
             this.grpStatus.Location = new System.Drawing.Point(0, 0);
-            this.grpStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpStatus.Margin = new System.Windows.Forms.Padding(4);
             this.grpStatus.Name = "grpStatus";
             this.grpStatus.Padding = new System.Windows.Forms.Padding(3, 21, 3, 2);
             // 
@@ -337,7 +338,7 @@ namespace OrderV2
             this.panelStatus.Controls.Add(this.label20);
             this.panelStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelStatus.Location = new System.Drawing.Point(3, 21);
-            this.panelStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelStatus.Margin = new System.Windows.Forms.Padding(4);
             this.panelStatus.Name = "panelStatus";
             this.panelStatus.Size = new System.Drawing.Size(726, 161);
             this.panelStatus.TabIndex = 45;
@@ -372,7 +373,7 @@ namespace OrderV2
             this.txtEnterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtEnterName.ForeColor = System.Drawing.Color.Blue;
             this.txtEnterName.Location = new System.Drawing.Point(125, 14);
-            this.txtEnterName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnterName.Margin = new System.Windows.Forms.Padding(4);
             this.txtEnterName.Name = "txtEnterName";
             this.txtEnterName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtEnterName.Size = new System.Drawing.Size(323, 30);
@@ -387,7 +388,7 @@ namespace OrderV2
             this.txtOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtOrder.ForeColor = System.Drawing.Color.Black;
             this.txtOrder.Location = new System.Drawing.Point(125, 50);
-            this.txtOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrder.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrder.Name = "txtOrder";
             this.txtOrder.ReadOnly = true;
             this.txtOrder.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -401,7 +402,7 @@ namespace OrderV2
             this.txtExternalReference.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtExternalReference.ForeColor = System.Drawing.Color.Black;
             this.txtExternalReference.Location = new System.Drawing.Point(125, 89);
-            this.txtExternalReference.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtExternalReference.Margin = new System.Windows.Forms.Padding(4);
             this.txtExternalReference.Name = "txtExternalReference";
             this.txtExternalReference.ReadOnly = true;
             this.txtExternalReference.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -415,7 +416,7 @@ namespace OrderV2
             this.txtOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtOrderStatus.ForeColor = System.Drawing.Color.Black;
             this.txtOrderStatus.Location = new System.Drawing.Point(125, 126);
-            this.txtOrderStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderStatus.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderStatus.Name = "txtOrderStatus";
             this.txtOrderStatus.ReadOnly = true;
             this.txtOrderStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -429,7 +430,7 @@ namespace OrderV2
             this.txtLabName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtLabName.ForeColor = System.Drawing.Color.Black;
             this.txtLabName.Location = new System.Drawing.Point(125, 162);
-            this.txtLabName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLabName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLabName.Name = "txtLabName";
             this.txtLabName.ReadOnly = true;
             this.txtLabName.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -481,7 +482,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel7.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel7.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel7.Size = new System.Drawing.Size(973, 184);
             this.splitPanel7.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.07042253F, 0F);
             this.splitPanel7.SizeInfo.SplitterCorrection = new System.Drawing.Size(72, 0);
@@ -500,7 +501,7 @@ namespace OrderV2
             this.clientDetails.IsUpdatedState = false;
             this.clientDetails.ListData = null;
             this.clientDetails.Location = new System.Drawing.Point(0, 0);
-            this.clientDetails.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.clientDetails.Margin = new System.Windows.Forms.Padding(5);
             this.clientDetails.Name = "clientDetails";
             this.clientDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.clientDetails.ServiceProvider = null;
@@ -518,7 +519,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.splitPanel1.Size = new System.Drawing.Size(1708, 42);
             this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.1431438F);
             this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -99);
@@ -530,7 +531,7 @@ namespace OrderV2
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.label3.Margin = new System.Windows.Forms.Padding(4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 22);
             this.label3.TabIndex = 45;
@@ -545,7 +546,7 @@ namespace OrderV2
             this.lblHeader.Font = new System.Drawing.Font("David", 20F);
             this.lblHeader.ForeColor = System.Drawing.Color.Blue;
             this.lblHeader.Location = new System.Drawing.Point(805, 2);
-            this.lblHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblHeader.Margin = new System.Windows.Forms.Padding(4);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblHeader.Size = new System.Drawing.Size(158, 39);
@@ -568,7 +569,7 @@ namespace OrderV2
             // 
             // 
             // 
-            this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(33, 31);
+            this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
             this.radSplitContainer1.Size = new System.Drawing.Size(1708, 751);
             this.radSplitContainer1.TabIndex = 0;
             this.radSplitContainer1.TabStop = false;
@@ -579,7 +580,7 @@ namespace OrderV2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radSplitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Order_cls";
             this.Size = new System.Drawing.Size(1708, 751);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel5)).EndInit();
